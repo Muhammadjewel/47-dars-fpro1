@@ -135,3 +135,42 @@ img {
     background-image: url("../img/hero-bg-mobile@2x.jpg");
   }
 }
+
+
+/* MEDIA QUERY */
+@media only screen and (min-width: 540px) {
+  /* HERO */
+  .hero {
+    background-position: center top;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* HERO */
+  .hero {
+    padding: 104px 58px;
+    background-image: url("../img/hero-bg-tablet.jpg");
+    background-position: center center;
+  }
+
+  .hero__content {
+    max-width: 400px;
+    text-align: left;
+  }
+
+  .hero__heading {
+    font-size: 48px;
+  }
+
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../img/hero-bg-tablet@2x.jpg");
+    }
+  }
+}
