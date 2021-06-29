@@ -59,6 +59,7 @@ img {
   font-weight: 900;
   color: #fefcf7;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .button:hover {
